@@ -1,5 +1,5 @@
 import './Nav.css'
-import nameicon from '../../Photoes/logo-text.png'
+import nameicon from '../../Photos/logo-text.png'
 
 const Nav=()=> {
   return (
