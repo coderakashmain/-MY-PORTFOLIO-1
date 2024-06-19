@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+body{
+
+  background-color: black;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #fff;
+
+}
+a{
+  text-decoration: none;
+  color: #fff; 
+}

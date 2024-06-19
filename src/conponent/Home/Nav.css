@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+nav{
+    width: 100%;
+
+}
+.navbar{
+    display: flex;
+    height: 90px;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.nav-box li{
+    margin: 0px 15px 0px;
+    
+    
+}
+.nav-box{
+    display: flex;
+    list-style: none;
+    font-size: 1.0rem;
+}
+.icon img{
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(0%) hue-rotate(228deg) brightness(102%) contrast(101%); 
+}
+.contact-btn a{
+    background-color: #ffea27;
+    border-radius: 24px;
+    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+    display: block;
+    padding: 9px 0px;
+    
+}
+.contact-btn a:hover{
+    box-shadow: 0px 0px 65px 12px #ffea27;
+}
+.nav-item{
+    transition: all 0.3s ease;
+}
+.nav-item:hover a{
+    color: #ffea27;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    
+}
+.container{
+    width: 100vw;
+    padding: 0% 12% 0%;
+    
+}

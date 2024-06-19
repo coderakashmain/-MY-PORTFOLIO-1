@@ -1,0 +1,94 @@
+#hero{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    height: 573px;
+    
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    position:relative;
+    top: 50px;
+    width: 60%;
+}
+.intro h2{
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+}
+.intro h2>span{
+    color: #ffea27;
+}
+.intro p:nth-child(3){
+    position: inline-block;
+    padding: 45px 0px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.intro p:nth-child(4){
+    font-size:2rem;
+    font-weight: 500;
+}
+.intro p:nth-child(4) span{
+    color: #ffea27;
+}
+.intro .btn{
+  outline: none; 
+
+
+}
+.intro .btn button{
+    font-size: 0.75rem;
+    padding: 14px 45px;
+    margin: 40px 56px 0px 0px;
+    border-radius: 28px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    
+}
+.intro .btn button:hover{
+    background-color: #ffea27;
+    box-shadow: 0px 0px 65px 12px #ffea27;
+
+}
+
+.pic{
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic .pic-box{
+    width: 330px;
+    height: 330px;
+    background:#fff;
+    border-radius:500px ;
+    position: relative;
+    top: 90px;
+    border: 18px solid;
+    border-color:  black #ffea27 #ffea27 #ffea27;
+    transition: all .5s linear;
+    box-shadow: 0px 0px 120px 13px  #ffea27 ;
+    animation: move 3s ease-in-out infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.pic .pic-box:hover{
+    transform: rotate(360deg);
+}
