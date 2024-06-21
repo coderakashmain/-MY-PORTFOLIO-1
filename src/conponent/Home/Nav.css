@@ -12,7 +12,7 @@ nav{
 }
 
 .nav-box li{
-    margin: 0px 15px 0px;
+    margin: 0px 1rem 0px;
     
     
 }
@@ -26,7 +26,7 @@ nav{
     filter: brightness(0) saturate(100%) invert(90%) sepia(0%) saturate(0%) hue-rotate(228deg) brightness(102%) contrast(101%); 
 }
 .contact-btn a{
-    background-color: #ffea27;
+    background-color:var(--yellow);
     border-radius: 24px;
     cursor: pointer;
     color: black;
@@ -36,13 +36,13 @@ nav{
     
 }
 .contact-btn a:hover{
-    box-shadow: 0px 0px 65px 12px #ffea27;
+    box-shadow: 0px 0px 65px 12px var(--yellow);
 }
 .nav-item{
     transition: all 0.3s ease;
 }
 .nav-item:hover a{
-    color: #ffea27;
+    color: var(--yellow);
     text-decoration: underline;
     text-underline-offset: 7px;
     

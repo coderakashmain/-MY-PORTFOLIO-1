@@ -2,9 +2,10 @@ import { useEffect } from "react"
 import "./Hero.css"
 import Aos from 'aos/dist/aos'
 import { useTypewriter,Cursor} from "react-simple-typewriter"
+import mylogo from "../../Photos/mypiclogo2.png"
 
 
-const Hero=()=> {
+const Hero=(props)=> {
   const [text] = useTypewriter({
     words : ['Full Stack Web Devloper' , 'Software Engineer'],
     loop : {},
@@ -18,7 +19,7 @@ const Hero=()=> {
   return (
     <div id="hero" className="container">
         <div className="intro" data-aos="fade-right">
-          <p style={{fontSize : '0.8rem',color :'#ffea27',marginBottom : '15px'}}>HELLO EVERYONE!</p>
+          <p style={{fontSize : '0.8rem',color :"var(--yellow)",marginBottom : '15px'}}>HELLO EVERYONE!</p>
           <h2>I'm <span>Akash <p>
               Bindhani
             </p></span></h2>
@@ -30,9 +31,11 @@ const Hero=()=> {
           </div>
         </div>
         <div className="pic" data-aos = "fade-down">
-          <div className="pic-box">
- 
-          </div>
+          <img src={mylogo} alt="" style={{height : '660px',
+    filter: ' saturate(1.1) drop-shadow(0px 0px 22px var(--yellow)'}} />
+          {/* <div className="pic-box">
+
+          </div> */}
           
         </div>
 

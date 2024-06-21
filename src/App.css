@@ -20,3 +20,6 @@ a{
   text-decoration: none;
   color: #fff; 
 }
+:root{
+  --yellow : #5d6bd1 ;
+}
