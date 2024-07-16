@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  
+/* Universal variable */
+.hover-effect::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    background-color:var(--yellow);
+    border-radius: 50%;
+    transition: all 0.3s linear;
 }
 
-body{
-
-  background-color: black;
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  color: #fff;
-
+.headline-text{
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.9vw;
 }
-a{
-  text-decoration: none;
-  color: #fff; 
-}
-:root{
-  --yellow : #5d6bd1 ;
+.container{
+    padding: 0% 12% 0%;
+    
 }

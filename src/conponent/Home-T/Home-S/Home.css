@@ -1,0 +1,167 @@
+.front{
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    position: relative;
+   
+}
+#Home{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    height: 80vh;
+    position: fixed;
+    top: 9%;
+    margin-top: 3.5rem;
+    z-index:1;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    position:relative;
+    width: 60%;
+}
+.intro h2{
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
+}
+.intro h2>span{
+    color: var(--yellow);
+}
+.intro p:nth-child(3){
+    position: inline-block;
+    padding: 3.8rem 0px;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.intro p:nth-child(4){
+    font-size:2rem;
+    font-weight: 500;
+}
+
+
+.intro .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 6rem;
+    letter-spacing: 1px;
+    width: 60%;
+  
+}
+.intro button{
+    width: 40%; 
+    height: 3rem;
+    border-radius: 10rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+ }
+
+
+.intro .btn button:hover::after{
+   bottom: 0px;
+   border-radius: 0px;
+}
+.btn a{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    z-index: 10;
+    color: #000;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.intro .btn button:hover a{
+    color:#fff;
+    transition: all 0.2s linear;
+ }
+.pic{
+    width:40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+        height  : 28vw;
+        transform: rotate(-2deg);
+        transition: all 0.1s linear;
+}
+.pic .pic-box{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.9vw solid;
+    animation: border 1.2s ease-out infinite alternate;
+    transition: all 0.1s;
+    
+}
+.pic .pic-box:hover{
+   box-shadow: 20px 20px 200px   #ffffff2c , -20px -20px 200px  #ffffff2c ;
+}
+.pic .pic-box:hover img{
+   transform: scale(1.05)  rotate(-2deg)   ;
+   
+}
+@keyframes border {
+    from{
+        border: 0vw solid;
+    }
+    to{
+        border: 0.9vw solid;
+        border-color: var(--yellow);
+    }
+    
+}
+@media (max-width : 1122px) {
+    html{
+        font-size: 90%;
+    }
+}
+@media (max-width : 951px) {
+    html{
+        font-size: 70%;
+    }
+    .pic img{
+        height  : 40vw;
+    }
+}
+@media (max-width : 500px) {
+
+    html{
+        font-size: 75%;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    .pic{
+        
+        align-items: flex-start;
+    }
+    .pic img{
+        height  :30vw;
+        width: 30vw;
+    }
+    .intro .btn{
+        width: 100%;
+        flex-direction:column;
+        gap: 1.3rem;
+        align-items: flex-start;
+        margin-top: 3rem;
+
+      
+    }
+    .intro button{
+        width: 8rem;
+        
+     }
+     .intro h2{
+        font-size: 5rem;
+        letter-spacing: 0.3rem;
+    }
+}

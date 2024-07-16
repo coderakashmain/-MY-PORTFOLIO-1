@@ -1,0 +1,48 @@
+#textrunner{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+    background-color: #111212;
+}
+
+#textrunner h1{
+    display: inline-block;
+    font-size: 8vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 5vw;
+}
+#textrunner h1::after{
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    transform: translate(-50%,-50%);
+    background-color: var(--yellow);
+    border-radius: 50%;
+}
+#textrunner h1:nth-child(3)::after{
+    left: -6%;
+}
+.textrunner-box{
+    /* animation: moving 10s linear infinite; */
+    display: inline-block;
+    white-space: nowrap;
+    transform:  translate(-100%);
+
+}
+/* @keyframes moving {
+    from{
+        transform:translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+} */

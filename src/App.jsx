@@ -1,10 +1,15 @@
+
 import './App.css'
-import Home from './conponent/Home/Home'
+import HomeP from './conponent/Home-T/HomeP'
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 const App=()=> {
+  const locomotiveScroll = new LocomotiveScroll();
   return (
     <>
-      <Home/>
+      
+      <HomeP/>
     </>
   )
 }

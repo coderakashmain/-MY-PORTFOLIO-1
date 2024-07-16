@@ -1,0 +1,15 @@
+
+#services-curser{
+    height: 6vw;
+    width: 6vw;
+    background-color: rgb(116, 112, 112);
+    position: fixed;
+        top: 0px;
+        left: 0px;
+    z-index:15;
+    border-radius: 50%;
+    transition: all 0.1s linear;
+    /* transform: scale(0.2); */
+    opacity: 0;
+    /* transform: scale(0); */
+}
