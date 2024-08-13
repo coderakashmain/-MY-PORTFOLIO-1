@@ -1,14 +1,7 @@
 /* Universal variable */
-.hover-effect::after{
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    bottom: -100%;
-    background-color:var(--yellow);
-    border-radius: 50%;
-    transition: all 0.3s linear;
+.hover-effect:hover{
+        transform: scale(0.97);
+        
 }
 
 .headline-text{

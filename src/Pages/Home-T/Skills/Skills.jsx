@@ -9,7 +9,7 @@ const Skills = () => {
           <h3 className='headline-text'>My skills</h3>
             <div className="skills-pic-box">
               <div className="skills-pic"> 
-
+                    <img src="https://cdn.elearningindustry.com/wp-content/uploads/2019/03/employee-or-employer-who-is-responsible-for-improving-employee-performance-and-how.jpeg" alt="" />
               </div>
               <p>I'm a full-stack developer for creating solution to complex problems. I have experience with HTML, CSS, Javascript, ReactJS, NodeJS and C++. I have also professional skills such as active listening, communication and teamwork.</p>
             </div>

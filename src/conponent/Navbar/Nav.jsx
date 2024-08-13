@@ -37,8 +37,8 @@ const Nav=()=> {
               <a href="#skills"><li className="nav-item">Skills</li></a>
               <a href="#service"><li className="nav-item">Services</li></a>
             </ul>
-            <ul className="nav-box contact-btn ">
-            <a className={`hover-effect ${sticky ? "trans-nav-btn" : "trans-nav-btn-off"}`}  href="#contact"><li>Get in touch</li></a>
+            <ul className="nav-box contact-btn hover-effect ">
+            <a className={` ${sticky ? "trans-nav-btn" : "trans-nav-btn-off"}`}  href="#contact"><li>Get in touch</li></a>
             </ul>
           </div>
       </nav>

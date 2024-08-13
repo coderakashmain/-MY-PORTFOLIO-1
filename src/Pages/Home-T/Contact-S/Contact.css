@@ -1,7 +1,7 @@
 #contact{
     height: 100vh;
     width: 100%;
-    background-color: var(--yellow);
+    background-color: #090d0d;
     position: relative;
     z-index: 10;
 }

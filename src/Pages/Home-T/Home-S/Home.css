@@ -44,43 +44,26 @@
 
 .intro .btn{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin-top: 6rem;
-    letter-spacing: 1px;
+    margin-top: 3rem;
     width: 60%;
+    gap: 5rem;
+    width: 100%;
   
 }
-.intro button{
-    width: 40%; 
-    height: 3rem;
-    border-radius: 10rem;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    text-align: center;
- }
 
-
-.intro .btn button:hover::after{
-   bottom: 0px;
-   border-radius: 0px;
-}
-.btn a{
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    z-index: 10;
-    color: #000;
-    font-weight: 400;
-    font-size: 1rem;
-}
-.intro .btn button:hover a{
-    color:#fff;
+.btn i{
+    font-size: 1.5rem;
     transition: all 0.2s linear;
- }
+}
+.btn i:hover{
+    transform:scale(0.9);
+}
+
+
+
+
 .pic{
     width:40%;
     height: 100%;

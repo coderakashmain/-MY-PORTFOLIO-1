@@ -11,22 +11,35 @@
 .skills-pic-box{
     height: 39vh;
     border-radius: 4rem;
+   
+}
+.skills-pic{
+    overflow: hidden;
+    width: 100%;
+    margin: 1.7rem 0;
+    border-radius: 5px;
+}
+.skills-pic img{
+    object-fit:cover    ;
+    height: 34rem;
+    width:100%;
+    background-position: center;
 }
 .skills-list-box{
-    padding-top:5vh;
+    padding-top:1.9rem;
 }
 .skills-list-box h5{
-    font-size: 1.7vw;
+    font-size: 1.6rem;
 }
 .skills-list{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 2vw;
-    padding: 1.8vw;
+    padding: 1.4rem;
 }
 .skills-list p{
-    padding: 0.6vw;
+    padding: 0.6rem;
     background-color: #4b4444ed;
     border-radius: 1.5vw;
     font-size: 0.9vw;
@@ -37,6 +50,6 @@
 .skills-pic-box  p{
     font-weight: 300;
     font-size:1.12vw;
-    line-height: 3.8vh;
+    line-height: 3vh;
     letter-spacing: 0.4px;
 }

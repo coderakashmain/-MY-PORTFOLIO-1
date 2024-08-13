@@ -39,7 +39,7 @@
 }
 
 .contact-btn a{
-    border-radius: 24px;
+    border-radius: 0.2rem;
     cursor: pointer;
     color: #000;
     font-size: 1rem;
@@ -47,21 +47,30 @@
     padding: 0.8rem 0px;
     position: relative;
     overflow: hidden;
+    transition: all 0.1s linear;
+
     
 }
-.contact-btn a:hover::after{
-   border-radius: 0%;
-   bottom: 0%;
+.contact-btn {
+   transition: all 0.1s linear;
+    
 }
+.trans-nav-btn-off{
+    background-color: #fff;
+    
+}
+.trans-nav-btn-off:hover{
+    background-color: rgb(179, 179, 179);
+    
+}
+
 .contact-btn a li{
     position: relative;
     z-index: 100;
     font-weight: 500;
     transition: all 0.2s linear;
 }
-.contact-btn a:hover li{
-    color: #fff;
-}
+
 
  
 .nav-tag a:hover{
@@ -78,7 +87,7 @@
 .trans-nav .nav-tag a:hover{
     backdrop-filter: blur(40px);
     background-color: #bbb8b82d;
-    border-radius: 5px;
+    border-radius: 2px;
     color: #fff;
     text-decoration: none;
 }
@@ -86,10 +95,7 @@
 .nav-item{
     transition: all 0.05s ease;
 }  
-.container{
-    padding: 0% 12% 0%;
-    
-}
+
 .trans-nav{
     backdrop-filter: blur(50px);
     background-color: #ffffff0b;
@@ -103,14 +109,9 @@
     border: 1px solid rgb(149, 143, 143);
     transition: all 0.2s linear;    
 }
+
 .trans-nav-btn li{
   color: #fff;    
 }
-.trans-nav-btn::after{
-    background-color: #efeeee38;
-}
 
 
-.trans-nav-btn-off{
-    background-color: #fff;
-}
