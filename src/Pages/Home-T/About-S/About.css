@@ -1,5 +1,5 @@
 #about{
-    background-color: #111212;
+  background-color: var(--backColor);
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -10,11 +10,17 @@
     position: relative;
 }
 .about-box h3{
-    padding-top: 9vw;
+    padding-top: 9.7rem;
+   color: var(--blackscreentextcolor);
+  
    
+}
+.line svg{
+  /* background-color: red; */
 }
 .about-box h3 p{
     display: inline;
+    color: var(--blackscreentextcolor);
 }
 .about-box-2ndhead{
     display: flex;
@@ -22,11 +28,13 @@
     justify-content: space-between;
     padding: 8vh 0 6vh;
 }
-.about-box-2ndhead h4{
+.about-box-2ndhead h5{
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5vw;
   letter-spacing: 0.8px;
+  font-weight:550;
+  color: var(--blackscreentextcolor);
 }
 .about-box-text{
  margin: 6vh 0  0 0 ;
@@ -44,6 +52,7 @@
   font-size:1.12vw;
   line-height: 3.78vh;
   letter-spacing: 0.4px;
+  color: var(--blackscreentextcolor);
 
 
 

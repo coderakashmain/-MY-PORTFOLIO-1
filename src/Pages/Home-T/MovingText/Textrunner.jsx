@@ -1,56 +1,183 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useRef } from 'react'
 import './Textrunner.css'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 const Textrunner = () => {
+
+    const textrunnerRef = useRef();
     useGSAP(()=>{
-       window.addEventListener('wheel',(dets)=>{
-        if(dets.deltaY > 0){
-            gsap.to(".textrunner-box",{
-                transform : 'translateX(-200%)',
-                repeat : -1,
-                duration : 8,
-                ease : 'none'
-                
-            })
+        const handlescroll =(dets) =>{
+            
+                if(dets.deltaY >0){
+                    gsap.to(".textrunner-box",{
+                        transform : 'translateX(-400%)',
+                        repeat : -1,
+                        duration : 15,
+                        ease : 'none'
+                        
+                    })
+                }
+                else{
+                    gsap.to('.textrunner-box',{
+                        transform : 'translateX(0%)',
+                        repeat : -1,
+                        duration : 5,
+                        ease : 'none'
+                    })
+                }
+               
         }
-        else{
-            gsap.to('.textrunner-box',{
-                transform : 'translateX(0%)',
-                repeat : -1,
-                duration : 8,
-                ease : 'none'
-            })
-        }
-       })
+
+       window.addEventListener('wheel',handlescroll,{passive : true});
+
+        gsap.from(textrunnerRef.current , {
+            x: 23,
+            opacity : 0,
+            duration : 1.5,
+            delay : 2.3
+        })
+
+       return ()=>{
+        window.removeEventListener('wheel',handlescroll, {passive : true})
+       }
+
     })
   return (
-   <section  id='textrunner'>
+   <section ref={textrunnerRef}  id='textrunner'>
     <div className="textrunner-box">
         
-        <h1>experiences</h1>
+        <h1>Akash</h1>
         
-        <h1>experiments</h1>
+        <h1>Bindhani</h1>
         
-        <h1>content</h1>
         
     </div>
     <div className="textrunner-box">
         
-        <h1>experiences</h1>
+        <h1>Akash</h1>
         
-        <h1>experiments</h1>
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+        
+        
+    </div>
+    <div className="textrunner-box">
+        
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
        
-        <h1>content</h1>
     </div>
     <div className="textrunner-box">
        
-        <h1>experiences</h1>
+        <h1>Akash</h1>
         
-        <h1>experiments</h1>
+        <h1>Bindhani</h1>
      
-        <h1>content</h1>
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
+    </div>
+    <div className="textrunner-box">
+       
+        <h1>Akash</h1>
+        
+        <h1>Bindhani</h1>
+     
     </div>
    </section>
   )

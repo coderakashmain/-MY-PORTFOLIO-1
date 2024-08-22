@@ -1,16 +1,23 @@
 #skills{
     height: 100vh;
     width: 100%;
-    background-color: #111212;
+    background-color: var(--blackscreencolor);
     z-index: 10;
     position: relative;
+    
 }
 .skills-box{
    padding-top: 15.9vh;
+   
+}   
+.skills-box .headline-text{
+   
+    color: var(--blackscreentextcolor);
 }   
 .skills-pic-box{
     height: 39vh;
     border-radius: 4rem;
+    color: var(--blackscreentextcolor);
    
 }
 .skills-pic{
@@ -18,6 +25,7 @@
     width: 100%;
     margin: 1.7rem 0;
     border-radius: 5px;
+    
 }
 .skills-pic img{
     object-fit:cover    ;
@@ -27,9 +35,11 @@
 }
 .skills-list-box{
     padding-top:1.9rem;
+    color: var(--blackscreentextcolor);
 }
 .skills-list-box h5{
     font-size: 1.6rem;
+    
 }
 .skills-list{
     display: flex;
@@ -40,9 +50,11 @@
 }
 .skills-list p{
     padding: 0.6rem;
-    background-color: #4b4444ed;
-    border-radius: 1.5vw;
+    background-color: var(--yellow);
+    /* background-color: var(--button); */
+    border-radius: 0.2rem;
     font-size: 0.9vw;
+    color: #fff;
 }
 .skills-pic-box .skills-pic{
     height: 75%;
@@ -52,4 +64,5 @@
     font-size:1.12vw;
     line-height: 3vh;
     letter-spacing: 0.4px;
+    
 }

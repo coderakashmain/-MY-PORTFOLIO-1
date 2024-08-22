@@ -4,8 +4,9 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    padding: 0px 13%;
+    padding: 0px 0 0 5%;
     z-index: 100;
+    background-color: #FEFEFF;
 }
 .navbar{
     display: flex;
@@ -16,6 +17,9 @@
     
 }
 
+.nav-box h2{
+  font-size: 1.3rem;
+}
 .nav-box li{
     margin: 0px 0.8rem 0px;
 }
@@ -23,6 +27,10 @@
     padding: 0.5rem 0.2rem;
     font-weight: 500;
     color: #fff;
+    opacity:1;
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+    font-weight: 700;
 }
 .nav-box a:active li{
     transform: scale(0.9);
@@ -38,43 +46,67 @@
     left: -2rem;
 }
 
-.contact-btn a{
-    border-radius: 0.2rem;
-    cursor: pointer;
-    color: #000;
-    font-size: 1rem;
-    display: block;
-    padding: 0.8rem 0px;
-    position: relative;
-    overflow: hidden;
+.contact-btn{
+    height: 100%;
     transition: all 0.1s linear;
-
+}
+.nav-boxa{
+    padding: 0rem 0.2rem;
+    font-weight: 500;
+    color: #fff;
+    opacity:1;
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+    font-weight: 700; 
+    list-style: none;
     
 }
-.contact-btn {
-   transition: all 0.1s linear;
+
+.nav-boxa i{
+    font-size: 1.1rem;
+    padding: 0 0.6rem 0 1rem;
+    
+}
+.contact-btn a{
+    /* border-radius: 0.2rem; */
+    cursor: pointer;
+    /* color: #000; */
+    display: block;
+  
+    position: relative;
+    padding: 0 3rem;
+    transition: all 0.1s linear;
+    background-color: #1A9FF9;
+    border-radius: 0rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
 }
 .trans-nav-btn-off{
     background-color: #fff;
     
 }
-.trans-nav-btn-off:hover{
-    background-color: rgb(179, 179, 179);
-    
-}
+
 
 .contact-btn a li{
     position: relative;
     z-index: 100;
-    font-weight: 500;
+    font-weight: 600;
     transition: all 0.2s linear;
 }
 
 
  
+.nav-tag a{
+    color: #000;
+    
+}
 .nav-tag a:hover{
-    color: var(--yellow);
+    color:#1A9FF9;
+    /* color: var(--yellow); */
     text-decoration: underline;
     text-underline-offset: 7px;
     
@@ -86,7 +118,7 @@
 }
 .trans-nav .nav-tag a:hover{
     backdrop-filter: blur(40px);
-    background-color: #bbb8b82d;
+    background-color: #1A9FF9;
     border-radius: 2px;
     color: #fff;
     text-decoration: none;
@@ -106,7 +138,6 @@
 .trans-nav-btn{
     backdrop-filter: blur(40px);
     background-color:transparent;
-    border: 1px solid rgb(149, 143, 143);
     transition: all 0.2s linear;    
 }
 

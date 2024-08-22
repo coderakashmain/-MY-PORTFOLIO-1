@@ -1,29 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 
-body{
+body,html{
   background-color: #000;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  color: #fff;
+  /* color: #fff; */
   overflow-x: hidden;
- 
-
 }
 a{
   text-decoration: none;
   color: #fff; 
 }
 :root{
-  --yellow : #434343 ;
+  /* --backColor : #090d0d ; */
+  --backColor : #F0F5FA ;
+  --yellow : #58a39f ;
+  --button : #1A9FF9;
+  --blackscreentextcolor : #000;
+  --blackscreencolor : #F0F5FA;
+}
+::-webkit-scrollbar{
+  /* display: none; */
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+  
+  background-color: var(--backColor);
+}
+::-webkit-scrollbar-thumb{
+  background-color:var(--button);
+  border-radius: 2rem;
 }

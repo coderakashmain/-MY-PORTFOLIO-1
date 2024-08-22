@@ -4,7 +4,7 @@ import './Skills.css'
 const Skills = () => {
   return (
     <div id='skills' className='container' >
-      <h6 style={{ fontSize : '1rem', position : 'relative' , top : '7vw', color :"var(--yellow)"}}><pre style={{color : '#fff', display : 'inline-block'}}>03 </pre>/ 05</h6>
+      <h6 style={{ fontSize : '1rem', position : 'relative' , top : '7vw', color :"var(--yellow)"}}><pre style={{color : 'var(--blackscreentextcolor)', display : 'inline-block'}}>03 </pre>/ 05</h6>
       <div className="skills-box">
           <h3 className='headline-text'>My skills</h3>
             <div className="skills-pic-box">
@@ -22,7 +22,7 @@ const Skills = () => {
                   <p>ReactJS</p>
                   <p>NodeJS</p>
                   <p>Express</p>
-                  <p>django</p>
+                  <p>MySQL</p>
                   <p>C++</p>
                 </div>
                 <h5>Professional Skills</h5>

@@ -1,8 +1,10 @@
 /* Universal variable */
 .hover-effect:hover{
-        transform: scale(0.97);
+        transform: translateX(0.2rem);
+ 
         
 }
+
 
 .headline-text{
     font-weight: 600;

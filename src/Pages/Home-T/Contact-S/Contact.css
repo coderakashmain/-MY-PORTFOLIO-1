@@ -1,7 +1,122 @@
 #contact{
-    height: 100vh;
+   min-height: 120vh;
     width: 100%;
-    background-color: #090d0d;
+    background-color: var(--backColor);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+#contact-front{
+    min-height: 100vh;
+    width: 100%;
     position: relative;
-    z-index: 10;
+}
+
+.contact-box{
+    height: 100%;
+    width: 100%;
+    margin-top: 6.4rem;
+}
+.contact-box-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 3.8rem 0 0 0;
+    flex-wrap: wrap;
+}   
+.contact-box h1{
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}   
+.left-contact-box{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+}
+.left-contact-box input{
+    width: 100%;
+    padding: 1rem 1rem;
+    border: 1px solid lightblue;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+}
+.left-contact-box input:focus{
+    outline-color: rgba(129, 186, 239, 0.891);
+}
+.left-contact-box h3{
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+    
+   
+}
+.left-contact-box textarea{
+  border: 1px solid lightblue;
+ border-radius: 0.2rem;
+ max-width: 100%;
+ max-height: 9rem;
+ padding: 1rem;
+ font-size: 0.86rem;
+}
+.left-contact-box button{
+    border: none;
+    padding: 1rem 4rem;
+    margin: 1rem 0 0 0;
+    background-color: #1A9FF9;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.left-contact-box textarea:focus{
+    outline-color: rgba(129, 186, 239, 0.891);
+}
+.left-contact-box form p:last-child{
+        margin: 1rem 0;
+        background-color: red;
+}
+.right-contact-box{
+    width: 40%;
+    height: 100%;
+    padding: 0 0 0 9rem;
+}
+.my-address h2{
+    margin: 0 0 1.6rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+
+}
+.my-address-box{
+    margin-bottom: 3rem;
+}
+.my-address-box p{
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+.my-social{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.my-social a{
+    color: #000;
+    font-size: 1.1rem;
+}
+.email-box p{ 
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+}
+.email-box p strong{ 
+   text-decoration: underline;
+   cursor: pointer;
 }

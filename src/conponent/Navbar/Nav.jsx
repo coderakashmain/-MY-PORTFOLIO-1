@@ -6,7 +6,8 @@ import { useEffect, useRef, useState } from 'react'
 
 
 const Nav=()=> {
-  const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(false);
+  const contactRef = useRef();
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
       window.scrollY >=650 ? setSticky(true) :setSticky(false);
@@ -17,19 +18,25 @@ const Nav=()=> {
   useGSAP(()=>{
     
     const tl=gsap.timeline();
-    tl.from('.navbar h2,.nav-box  a',{
+    tl.from('.navbar h2 ,.nav-box a',{
       x:-70,
-      scale:0,
+      // scale:0,
       opacity:0,
-      duration:0.5,
+      duration:0.9,
       stagger:0.07
+    })
+    gsap.from(contactRef.current,{
+      x:100,
+      // scale : 0,
+      opacity : 0,
+      duration : 0.9
     })
   })
   return (
       <nav id='nav' className={` ${sticky ? "trans-nav" : "trans-nav-off"}`} >
           <div className="navbar">
               <div  className=" nav-box icon">
-                <h2>Portfolio.</h2>
+                <h2> &#169; Code By Akash</h2>
               </div>
             <ul className="nav-box nav-tag">
               <a href="#"><li className="nav-item">Home</li></a>
@@ -37,8 +44,8 @@ const Nav=()=> {
               <a href="#skills"><li className="nav-item">Skills</li></a>
               <a href="#service"><li className="nav-item">Services</li></a>
             </ul>
-            <ul className="nav-box contact-btn hover-effect ">
-            <a className={` ${sticky ? "trans-nav-btn" : "trans-nav-btn-off"}`}  href="#contact"><li>Get in touch</li></a>
+            <ul  className="nav-boxa contact-btn hover-effect " >
+            <a  ref={contactRef} className={` ${sticky ? "trans-nav-btn" : "trans-nav-btn-off"}`}  href="#contact-front"><li>Get in touch<i className="fa-solid fa-arrow-right"></i></li></a>
             </ul>
           </div>
       </nav>
