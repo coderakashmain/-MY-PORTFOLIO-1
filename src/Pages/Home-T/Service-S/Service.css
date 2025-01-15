@@ -1,15 +1,12 @@
 #service{
-    min-height: 110vh;
-    width: 110vw; 
-     /* background-color: #111212; */
+    min-height: 100vh;
+    width: 100%; 
     background-color: var(--blackscreencolor);
-    z-index: 5;
+    z-index: 11;
     position: relative;
     overflow: hidden;
     box-shadow:0 54px 80px rgba(58, 125, 171, 0.13), 0 22.5599px 33.4221px rgba(58, 125, 171, 0.0934511), 0 12.0616px 17.869px rgba(58, 125, 171, 0.0774939), 0 6.76164px 10.0172px rgba(58, 125, 171, 0.065), 0 3.59106px 5.32008px rgba(58, 125, 171, 0.0525061), 0 1.49432px 2.21381px rgba(58, 125, 171, 0.0365489);
-    border-radius:   0% 0% 50% 50% / 28% 28% 10% 10%;
-    padding: 0 16rem;
-    transform: translateX(-5%);
+
   
 }
 
@@ -42,7 +39,7 @@
     /* grid-row: 1; */
 }
 .services-items:last-child{
-    flex-grow: 2;
+    flex-grow: 6;
 }
 .services-items:hover{
     transform: translate(0 ,-4%);
@@ -94,7 +91,7 @@
 
 }
 .more-services{
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -104,7 +101,13 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-
+    transform: scale(0.5);
+    transition: all 3s ease-in-out;
+}
+.pop-up-on{
+    
+    transform: scale(1);
+    transition: all 3s ease-in-out;
 }
 .more-services-box{
     width: 68rem;

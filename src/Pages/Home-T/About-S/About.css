@@ -15,9 +15,7 @@
   
    
 }
-.line svg{
-  /* background-color: red; */
-}
+
 .about-box h3 p{
     display: inline;
     color: var(--blackscreentextcolor);
@@ -46,11 +44,18 @@
 
 .about-box-text-pic{
   width: 50%;
+  overflow: hidden;
+}
+.about-box-text-pic img{
+  aspect-ratio: 1;
+  object-fit: cover;
+  height: 36rem;
 }
 .about-box-text-descrip {
   font-weight: 300;
   font-size:1.12vw;
   line-height: 3.78vh;
+  margin-left: 1rem;
   letter-spacing: 0.4px;
   color: var(--blackscreentextcolor);
 

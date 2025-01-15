@@ -3,6 +3,7 @@ import './About.css'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { AboutusRefdata } from '../../../Context/AboutusRefContext/AboutusRefContext'
+import logo from '../../../Photos/akashphoto.jpg'
 
 const About = () => {
 
@@ -22,6 +23,10 @@ useEffect(()=>{
 },[]);
 
   useGSAP(()=>{
+
+    const handlescroll = ()=>{
+
+   
     const tl = gsap.timeline();
 
     
@@ -89,6 +94,8 @@ useEffect(()=>{
         scrub : 2
       }
     })
+  }
+  handlescroll();
   },[]);
 
 
@@ -183,7 +190,7 @@ svgRef.current.addEventListener('mouseleave',secsvgout , {passive : true});
         </div>
         <div className="about-box-text">
         <div className="about-box-text-pic">
-
+              <img src={logo} alt="akashLogo" />
         </div>
 
           <div className="about-box-text-descrip">

@@ -30,10 +30,20 @@ const Service = () => {
  
 useEffect(()=>{
   if(moreServicesBackEnd || moreServicesFrontend  || moreServicesUx){
+    
     setWholeback(true);
+    
   }
-},[moreServicesBackEnd, moreServicesFrontend, moreServicesUx])
- 
+},[moreServicesBackEnd, moreServicesFrontend, moreServicesUx]);
+
+// useEffect(()=>{
+//   if(wholeback){
+//     document.body.style.overflowY = "hidden";
+//   }else{
+//     document.body.style.overflowY = 'scroll'
+//   }
+//   console.log(wholeback);
+// },[wholeback])
 
   // useGSAP(()=>{
   //   let sl = gsap.timeline();
@@ -108,7 +118,7 @@ useEffect(()=>{
               </div>
               </div>
           </div>
-          {wholeback &&(<div ref={moreServicesRef} onClick={handleclick} className="more-services">
+          {wholeback &&(<div ref={moreServicesRef} onClick={handleclick} className={`more-services ${moreServicesBackEnd || moreServicesUx ||moreServicesFrontend ? 'pop-up-on' : 'pop-up-off'}`}>
           {moreServicesBackEnd &&(
             <div className="more-services-box">
             <i className="fa-solid fa-database"></i>

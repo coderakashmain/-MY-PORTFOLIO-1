@@ -1,44 +1,68 @@
-import React, { useEffect, useRef } from 'react'
+import React, {  useRef, useState,useEffect } from 'react'
 import './Contact.css'
 import LocomotiveScroll from 'locomotive-scroll';
 
 
 
 const Contact = () => {
+  const locomotiveScroll = new LocomotiveScroll();
+
   const contactRef = useRef(null);
-  useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll({
-      el: contactRef.current,
-      smooth: true,
-      lerp: 0.1, // Default lerp value, lower means smoother but slower scrolling
-      multiplier: 1.5, // Speed multiplier
-    });
 
-    return () => {
-      if (locomotiveScroll) locomotiveScroll.destroy();
-    };
-  }, []);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+const handleSubmit = () =>{
+  
+}
+
+ 
   const emailAddress = "ab791235@gmail.com"; // Your email address
   const handleEmailButtonClick = () => {
     window.open(`mailto:${emailAddress}`, '_blank');
   };
+
+  const [scroll,setScroll] =useState(false);
+  
+//   useEffect(()=>{
+//     const handleHomepage = ()=>{
+
+
+//     if(window.scrollY >=2500){
+//       setScroll(true);
+//       // alert('hle');
+//     }
+//     else{
+//       setScroll(false);
+//     }
+//   }
+ 
+//   window.addEventListener('scroll',handleHomepage, {passive : true});
+
+//   return  () => window.removeEventListener('scroll',handleHomepage , {passive : true} );
+// },[]);
   return (
     <>
-    <section ref={contactRef} data-scroll  data-scroll-speed= '-0.2'  id="contact" className='container'>
+    <section ref={contactRef} data-scroll   data-scroll-speed= {scroll ? '-0.05' : '0'}  id="contact" className='container'>
        <h6 style={{ fontSize : '1rem', position : 'relative' , top : '7vw', color :"var(--yellow)"}}><pre style={{color : '#000', display : 'inline-block'}}>05 </pre>/ 05</h6>
         
           <div data-scroll   className="contact-box">
             <h1>Contact</h1>
             <div className="contact-box-inside">
               <div className="left-contact-box">
-                <form action="#">
+                <form  onSubmit= {handleSubmit}>
                   <h3>Send me a message</h3>
                   <p>*Denotes mandatory Fields</p>
-                    <input type="text" name='name' placeholder='Name*' required/>
-                    <input type="gmail" name='gmail' placeholder='Email*' required/>
+                    <input type="text" name='name'  value={formData.name} onChange={handleChange} placeholder='Name*' required/>
+                    <input type="gmail" name='gmail' value={formData.email} onChange={handleChange} placeholder='Email*' required />
                    <p style={{margin : '0rem 0 0.8rem 0'}}>Message*</p>
-                    <textarea name="messge" id="" rows='4' cols='100' placeholder='Type message here...' required></textarea>
+                    <textarea name="message" value={formData.message} onChange={handleChange} id="" rows='4' cols='100' placeholder='Type message here...' required></textarea>
                     <button>Submit</button>
                 </form>
                 

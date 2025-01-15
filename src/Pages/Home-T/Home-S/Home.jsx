@@ -30,11 +30,11 @@ const Home = () => {
 
 
     if(window.scrollY >=900){
-      homeref.current.style.display = "none";
+      homeref.current.style.zIndex = "1";
 
     }
     else{
-      homeref.current.style.display = "flex";
+      homeref.current.style.zIndex = "3";
     }
   }
   window.addEventListener('scroll',handleHomepage, {passive : true});
@@ -49,6 +49,21 @@ const ScrolldownRef = useRef();
 const typwriterRef = useRef();
 const homecontactRef = useRef();
 const homofrontRef = useRef();
+
+useEffect(()=>{
+  const frontvisibility = ()=>{
+    if(window.scrollY  <1){
+      homofrontRef.current.style.zIndex = '-1';
+    }
+    if(window.scrollY >=60){
+      homofrontRef.current.style.zIndex = '2';
+    }
+  }
+  window.addEventListener('scroll',frontvisibility,{passive : true});
+
+  return ()=> window.removeEventListener('scroll',frontvisibility, {passive : true});
+},[]);
+
 
 useGSAP(()=>{
 
@@ -106,18 +121,21 @@ useGSAP(()=>{
   if(aboutuspageData && homofrontRef.current){
     gsap.to(homofrontRef.current ,{
       background : 'black',
-      duration : 2,
+      duration : 0.5,
       scrollTrigger : {
         trigger : aboutuspageData,
         scroll : 'body',
-        start : "top 80%",
+        start : "top 85%",
         end : 'top 0%',
         scrub : 1
       }
     })
   }
   
-},[aboutuspageData])
+},[aboutuspageData]);
+
+
+
   return (
     <>
 
