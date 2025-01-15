@@ -8,7 +8,9 @@ const Contact = () => {
   const locomotiveScroll = new LocomotiveScroll();
 
   const contactRef = useRef(null);
-
+  useEffect(()=>{
+    contactRef.current.style.zIndex = '-1'
+  })
   const [formData, setFormData] = useState({
     name: "",
     email: "",
