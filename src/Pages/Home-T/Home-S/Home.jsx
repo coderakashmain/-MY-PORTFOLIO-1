@@ -30,7 +30,7 @@ const Home = () => {
 
 
     if(window.scrollY >=900 ){
-      homeref.current.style.zIndex = "1";
+      homeref.current.style.zIndex = "-1";
 
     }
     else{

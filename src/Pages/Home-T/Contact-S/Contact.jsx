@@ -9,7 +9,7 @@ const Contact = () => {
 
   const contactRef = useRef(null);
   useEffect(()=>{
-    contactRef.current.style.zIndex = '-1'
+    contactRef.current.style.zIndex = '0'
   })
   const [formData, setFormData] = useState({
     name: "",
