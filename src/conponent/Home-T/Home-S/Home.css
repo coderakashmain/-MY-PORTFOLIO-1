@@ -1,0 +1,120 @@
+.front{
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    position: relative;
+   
+}
+#Home{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    height: 80vh;
+    position: fixed;
+    top: 9%;
+    margin-top: 3.5vw;
+    z-index:1;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    position:relative;
+    width: 60%;
+}
+.intro h2{
+    font-size: 6vw;
+    letter-spacing: 2px;
+}
+.intro h2>span{
+    color: var(--yellow);
+}
+.intro p:nth-child(3){
+    position: inline-block;
+    padding: 40px 0px;
+    font-weight: 700;
+    font-size: 1.4vw;
+}
+
+.intro p:nth-child(4){
+    font-size:2rem;
+    font-weight: 500;
+}
+
+
+.intro .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 12vh;
+    letter-spacing: 1px;
+    width: 60%;
+  
+}
+.intro button{
+    width: 40%;
+    height: 3vw;
+    border-radius: 10vw;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+ }
+
+
+.intro .btn button:hover::after{
+   bottom: 0px;
+   border-radius: 0px;
+}
+.btn a{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    z-index: 10;
+    color: #000;
+    font-weight: 400;
+    font-size: 1vw;
+}
+.intro .btn button:hover a{
+    color:#fff;
+    transition: all 0.2s linear;
+ }
+.pic{
+    width:40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+        height  : 28vw;
+        transform: rotate(-2deg);
+        transition: all 0.1s linear;
+}
+.pic .pic-box{
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.9vw solid;
+    animation: border 1.2s ease-out infinite alternate;
+    transition: all 0.1s;
+    
+}
+.pic .pic-box:hover{
+   box-shadow: 20px 20px 200px   #ffffff2c , -20px -20px 200px  #ffffff2c ;
+}
+.pic .pic-box:hover img{
+   transform: scale(1.05)  rotate(-2deg)   ;
+   
+}
+@keyframes border {
+    from{
+        border: 0vw solid;
+    }
+    to{
+        border: 0.9vw solid;
+        border-color: var(--yellow);
+    }
+    
+}
