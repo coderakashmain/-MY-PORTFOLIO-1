@@ -1,0 +1,49 @@
+#textrunner{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 7%;
+    left: -27%;
+}
+
+#textrunner h1{
+    display: inline-block;
+    font-size: 5rem;
+    position: relative;
+    margin-left: 5rem;
+    color: lightblue;
+}
+/* #textrunner h1::after{
+    content: "";
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    transform: translate(-50%,-50%);
+    background-color: var(--button);
+    border-radius: 50%;
+} */
+/* #textrunner h1:nth-child(3)::after{
+    left: -6%;
+} */
+.textrunner-box{
+    display: inline-block;
+    white-space: nowrap;
+    transform:  translate(-500%);
+    margin: 0 0 0 2rem;
+
+}
+.textrunner-box h1:first-child::before{
+    content:  "";
+    width: 5rem;
+    height: 0.5rem;
+    background-color: lightblue;
+    position: absolute;
+    left: -40%;
+    top: 50%;
+}
